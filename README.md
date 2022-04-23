@@ -6,7 +6,7 @@ This repository contains branches, which have mavens for all the minecraft mods 
 
 In order to import mods, you must add the following to your **build.gradle** file:
 
-###Repository
+### Repository
 
 ```
 	maven {
@@ -15,13 +15,13 @@ In order to import mods, you must add the following to your **build.gradle** fil
 	}
 ```
 
-###Dependency
+### Dependency
 
 ```
 implementation fg.deobf("com.slepderp:ModName:MinecraftVersion-ModVersion") //You could probably get by adding *${project.modid}* after the mod name
 ```
 
-###IMPORTANT: Do NOT add any of these inside the dependencies or repositories in the buildscript of your *build.gradle* file!
+### IMPORTANT: Do NOT add any of these inside the dependencies or repositories in the buildscript of your *build.gradle* file!
 
 If any of my mods have external dependencies, just add them via the method mentioned above, or follow their steps (if they have anything extra you might need to add). 
 
